@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import AddPosition from "./Components/AddPosition";
 
@@ -16,8 +16,19 @@ const POSITIONS = [
 	{ id: 2, ticker: "VYM", shares: 50, cost_Basis: 50 },
 ];
 
+const ENDPOINT =
+	"https://api.polygon.io/v3/reference/dividends?ticker=MSFT&limit=10&sort=pay_date&apiKey=OpUvg14_sBr6fUx2zRfjPRe4O1zLN6Ve";
+
 function App() {
 	const [currentPositions, setCurrentPositions] = useState(POSITIONS);
+
+	// useEffect(() => {
+	// 	fetch(ENDPOINT).then((response) =>
+	// 		response.json().then((data) => {
+	// 			console.log(data);
+	// 		})
+	// 	);
+	// }, []);
 
 	return (
 		<>
