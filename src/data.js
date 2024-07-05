@@ -118,6 +118,127 @@ const sampleDividendResponse = {
 		"https://api.polygon.io/v3/reference/dividends?cursor=YXA9MjAyMi0wMy0xMCZhcz1NU0ZUJmxpbWl0PTEwJm9yZGVyPWRlc2Mmc29ydD1wYXlfZGF0ZSZ0aWNrZXI9TVNGVA",
 };
 
+/*
+
+{
+    "results": [
+        {
+            "cash_amount": 0.8241,
+            "currency": "USD",
+            "declaration_date": "2024-02-19",
+            "dividend_type": "CD",
+            "ex_dividend_date": "2024-06-26",
+            "frequency": 4,
+            "pay_date": "2024-07-01",
+            "record_date": "2024-06-26",
+            "ticker": "SCHD"
+        },
+        {
+            "cash_amount": 0.611,
+            "currency": "USD",
+            "declaration_date": "2024-02-19",
+            "dividend_type": "CD",
+            "ex_dividend_date": "2024-03-20",
+            "frequency": 4,
+            "pay_date": "2024-03-25",
+            "record_date": "2024-03-21",
+            "ticker": "SCHD"
+        },
+        {
+            "cash_amount": 0.7423,
+            "currency": "USD",
+            "declaration_date": "2023-03-10",
+            "dividend_type": "CD",
+            "ex_dividend_date": "2023-12-06",
+            "frequency": 4,
+            "pay_date": "2023-12-11",
+            "record_date": "2023-12-07",
+            "ticker": "SCHD"
+        },
+        {
+            "cash_amount": 0.6545,
+            "currency": "USD",
+            "declaration_date": "2023-03-10",
+            "dividend_type": "CD",
+            "ex_dividend_date": "2023-09-20",
+            "frequency": 4,
+            "pay_date": "2023-09-25",
+            "record_date": "2023-09-21",
+            "ticker": "SCHD"
+        },
+        {
+            "cash_amount": 0.6647,
+            "currency": "USD",
+            "declaration_date": "2023-03-10",
+            "dividend_type": "CD",
+            "ex_dividend_date": "2023-06-21",
+            "frequency": 4,
+            "pay_date": "2023-06-26",
+            "record_date": "2023-06-22",
+            "ticker": "SCHD"
+        },
+        {
+            "cash_amount": 0.5965,
+            "currency": "USD",
+            "declaration_date": "2023-03-10",
+            "dividend_type": "CD",
+            "ex_dividend_date": "2023-03-22",
+            "frequency": 4,
+            "pay_date": "2023-03-27",
+            "record_date": "2023-03-23",
+            "ticker": "SCHD"
+        },
+        {
+            "cash_amount": 0.7034,
+            "currency": "USD",
+            "declaration_date": "2022-02-18",
+            "dividend_type": "CD",
+            "ex_dividend_date": "2022-12-07",
+            "frequency": 4,
+            "pay_date": "2022-12-12",
+            "record_date": "2022-12-08",
+            "ticker": "SCHD"
+        },
+        {
+            "cash_amount": 0.6367,
+            "currency": "USD",
+            "declaration_date": "2022-02-18",
+            "dividend_type": "CD",
+            "ex_dividend_date": "2022-09-21",
+            "frequency": 4,
+            "pay_date": "2022-09-26",
+            "record_date": "2022-09-22",
+            "ticker": "SCHD"
+        },
+        {
+            "cash_amount": 0.7038,
+            "currency": "USD",
+            "declaration_date": "2022-02-18",
+            "dividend_type": "CD",
+            "ex_dividend_date": "2022-06-22",
+            "frequency": 4,
+            "pay_date": "2022-06-27",
+            "record_date": "2022-06-23",
+            "ticker": "SCHD"
+        },
+        {
+            "cash_amount": 0.5176,
+            "currency": "USD",
+            "declaration_date": "2022-02-18",
+            "dividend_type": "CD",
+            "ex_dividend_date": "2022-03-23",
+            "frequency": 4,
+            "pay_date": "2022-03-28",
+            "record_date": "2022-03-24",
+            "ticker": "SCHD"
+        }
+    ],
+    "status": "OK",
+    "request_id": "997453fd81be263e36982378a65a7ff8",
+    "next_url": "https://api.polygon.io/v3/reference/dividends?cursor=YXA9MjAyMS0xMi0xMyZhcz1TQ0hEJmxpbWl0PTEwJm9yZGVyPWRlc2Mmc29ydD1wYXlfZGF0ZSZ0aWNrZXI9U0NIRA"
+}
+*/
+
 //TickerDetails https://api.polygon.io/v3/reference/tickers/MSFT?apiKey=OpUvg14_sBr6fUx2zRfjPRe4O1zLN6Ve
 const sampleTickerDetailsResponse = {
 	request_id: "fb30bdb1ec433d3aec15f1a4377baba9",

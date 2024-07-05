@@ -1,14 +1,17 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import AddPosition from "./Components/AddPosition";
+import PositionRow from "./Components/PositionRow";
 
 const HEADERS = [
+	" ",
 	"Ticker",
 	"Name",
 	"Shares",
 	"Cost per Share",
 	"Cost Basis",
 	"Market Value",
+	"Delete",
 ];
 
 const POSITIONS = [
@@ -43,14 +46,14 @@ function App() {
 						</tr>
 					</thead>
 					<tbody>
-						{currentPositions.map((position) => (
-							<tr key={position.id}>
-								<td>{position.ticker}</td>
-								<td>Feature not yet available</td>
-								<td>{position.shares}</td>
-								<td>{position.cost_Basis}</td>
-								<td>{position.shares * position.cost_Basis}</td>
-							</tr>
+						{currentPositions.map((position, index) => (
+							<PositionRow
+								key={position.key}
+								position={position}
+								rowNumber={index}
+								currentPositions={currentPositions}
+								setCurrentPositions={setCurrentPositions}
+							/>
 						))}
 					</tbody>
 				</table>
